@@ -1,0 +1,89 @@
+h2 {
+    font-family: 'Loved by the King', cursive;
+    font-size: 30px;
+    font-weight: 500; // white-space: pre-wrap;
+}
+
+.example-card {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.creator-card {
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 10%;
+}
+
+.dialog {
+    width: 400px;
+}
+
+.card-blue {
+    background-color: blue-grey darken-1;
+    .card-actions {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.form {
+    width: 500px;
+    margin: 165px auto 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.note-creator {
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.title {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.full {
+    height: 100px;
+}
+
+.md-input-underline {
+    border-color: #fafafa !important;
+}
+
+// .card-actions {
+//     align-items: right;
+// }
+md-card-header {
+    display: inline !important;
+    flex-direction: row;
+    height: 40px;
+    margin: -8px 0 16px;
+}
+
+.card .card-title {
+    font-size: 35px;
+    font-weight: 300;
+}
+
+button:focus {
+    outline: none;
+    background-color: #eee;
+}
+
+
+input:focus{
+
+    border-bottom: 1px solid red !important; 
+
+}
+// md-progress-bar {
+//   position: absolute;
+// }

@@ -1,0 +1,40 @@
+<md-progress-bar mode="indeterminate" color="secondary" *ngIf="isLoading"></md-progress-bar>
+
+
+
+<div *ngIf="bucketlists" class="container">
+  
+    <md-card class="creator-card">
+      <h6>Create Bucketlist</h6>
+  <div class="flex-container  layout-column">
+        <md-input class="create" type="text" name="new_bucket" [(ngModel)]="new_bucket" placeholder="Add Bucketlist......"></md-input>
+      </div>
+      <button class="right-align" (click)="createBucketlist(new_bucket)" md-raised-button color="primary" type="submit">Done</button>
+    </md-card>
+    <div class="row">
+    <div class="col s12 m4" *ngFor="let bucket of bucketlists  ">
+      
+      <md-card class="example-card blur-grey hoverable ">
+        <md-card-header>
+
+          <md-card-title>
+            <h2>{{bucket.name}}</h2>
+          </md-card-title>
+
+          <!--<md-card-subtitle>Dog Breed</md-card-subtitle>-->
+        </md-card-header>
+        <md-card-content>
+          <a [routerLink]="['/items']">
+
+ <span color="primary" md-button md-tooltip="View Items" class="new badge grey" data-badge-caption="items">0</span>
+ </a>
+        </md-card-content>
+        <md-card-actions class="card-actions">
+          <button color="primary" md-button md-tooltip="View Bucket Info!"><md-icon>info</md-icon></button>
+          <!--<span color="primary" md-button md-tooltip="View Items" class="new badge grey" data-badge-caption="items">0</span>-->
+          <button color="primary" (click)="updateDialog()" md-button md-tooltip="Edit Bucketlist"><md-icon>edit</md-icon></button>
+          <button color="accent" (click)="openDialog(bucket.id)" md-button md-tooltip="Delete Bucketlist"><md-icon>delete</md-icon></button>
+        </md-card-actions>
+      </md-card>
+    </div>
+  </div>

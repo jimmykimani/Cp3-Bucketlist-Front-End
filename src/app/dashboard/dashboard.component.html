@@ -1,0 +1,19 @@
+  
+  
+ <h2>Hi, {{username}}! Welcome to your Dashboard</h2>
+<div class="flex-container layout-column-sm layout-column-sm widgets">
+  <core-widget icon="shopping_basket" [count]="28" description="Bucketlists" [palette]="{palette: 'blue', hue: '400'}"hexTextColor="#fff"></core-widget>
+  <core-widget icon="add_shopping_cart" [count]="30" description="Items" [palette]="{palette: 'blue', hue: '400'}"hexTextColor="#fff"></core-widget>
+  <core-widget icon="thumb_up" [count]="20" description="Done" [palette]="{palette: 'blue', hue: '400'}"hexTextColor="#fff"></core-widget>
+  <core-widget icon="thumb_down" [count]="6" description="Not Done" [palette]="{palette: 'blue', hue: '400'}"hexTextColor="#fff"></core-widget>
+</div>
+  
+
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large blue-grey darken-4">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating blue-grey darken-4  btn tooltipped "data-position="top" data-delay="50" data-tooltip="add Bucketlist"><i class="material-icons">add</i></a></li>
+    </ul>
+  </div>
